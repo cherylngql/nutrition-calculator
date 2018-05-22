@@ -38,7 +38,7 @@ $(document).ready(function() {
     $('#total_fat').text(totalFat.toFixed(2));
     $('#total_protein').text(totalProtein.toFixed(2));
     $('#total_fiber').text(totalFiber.toFixed(2));
-    $('h3').show();
+    $('#total_result').show();
     $('#sum').attr("disabled", "disabled");
   });
 });
