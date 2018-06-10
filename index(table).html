@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Nutrition Calculator</title>
+    <!-- Bootstrap and CSS here-->
+    <link rel='stylesheet' type='text/css' href='main(table).css'>
+    <meta name='viewport' content='width=device-width'>
+  </head>
+  <body>
+    <div id='app' class='container-fluid center'>
+
+      <div id='headers'>
+        <!-- Title and subtitles! -->
+        <h1>Are you having a balanced diet?</h1>
+        <h3>Calculate your nutritional intake by listing what you eat today!</h3>
+      </div>
+      <div id='menu'>
+        <h4>Select what you would like to know</h4>
+        <table style="width:100%">
+          <tr>
+            <th>Food</th>
+            <th>Quantity</th>
+            <th class='choice selected'>Calories</th> 
+            <th class='choice deselected'>Calories From Fat</th>
+            <th class='choice selected'>Total Fat</th>
+            <th class='choice deselected'>Saturated Fat</th>
+            <th class='choice deselected'>Total Carbohydrate</th>
+            <th class='choice selected'>Dietary Fiber</th>
+            <th class='choice selected'>Sugars</th>
+            <th class='choice selected'>Protein</th>
+          </tr>
+          <tr>
+            <td><input class='food' type='text' placeholder="Fuji apple"></td>
+            <td><input class='quantity' type='text' placeholder='1'>
+              <select class='dropdown'>
+                <option>NLEA servings</option>
+                <option>grams</option>
+                <option>cups</option>
+                <option>lbs</option>
+                <option>ounces</option>
+                <option selected="selected"></option>
+              </select>
+              <input class='option' type='text' placeholder='medium'>
+            </td>
+            <td class='calories'></td>
+            <td class='calories_from_fat'></td>
+            <td class='total_fat'></td> 
+            <td class='saturated_fat'></td>
+            <td class='total_carbohydrate'></td>
+            <td class='dietary_fiber'></td> 
+            <td class='sugars'></td>
+            <td class='protein'></td>
+          </tr>
+          <tr>
+            <td><input class='food' type='text' placeholder="Blueberries"></td>
+            <td><input class='quantity' type='text' placeholder='1'>
+              <select class='dropdown'>
+                <option selected="selected">NLEA servings</option>
+                <option>grams</option>
+                <option>cups</option>
+                <option>lbs</option>
+                <option>ounces</option>
+                <option></option>
+              </select>
+              <input class='option' type='text' disabled>
+            </td>
+            <td class='calories'></td>
+            <td class='calories_from_fat'></td>
+            <td class='total_fat'></td> 
+            <td class='saturated_fat'></td>
+            <td class='total_carbohydrate'></td>
+            <td class='dietary_fiber'></td> 
+            <td class='sugars'></td>
+            <td class='protein'></td>
+          </tr>
+          <tr>
+            <td><input class='food' type='text' placeholder="White rice"></td>
+            <td><input class='quantity' type='text' placeholder='0.25'>
+              <select class='dropdown'>
+                <option>NLEA servings</option>
+                <option>grams</option>
+                <option selected="selected">cups</option>
+                <option>lbs</option>
+                <option>ounces</option>
+                <option></option>
+              </select>
+              <input class='option' type='text' disabled>
+            </td>
+            <td class='calories'></td>
+            <td class='calories_from_fat'></td>
+            <td class='total_fat'></td> 
+            <td class='saturated_fat'></td>
+            <td class='total_carbohydrate'></td>
+            <td class='dietary_fiber'></td> 
+            <td class='sugars'></td>
+            <td class='protein'></td>
+          </tr>
+          <tr>
+            <td><input class='food' type='text' placeholder="Chicken breast"></td>
+            <td><input class='quantity' type='text' placeholder='0.3'>
+              <select class='dropdown'>
+                <option>NLEA servings</option>
+                <option>grams</option>
+                <option>cups</option>
+                <option selected="selected">lbs</option>
+                <option>ounces</option>
+                <option></option>
+              </select>
+              <input class='option' type='text' disabled>
+            </td>
+            <td class='calories'></td>
+            <td class='calories_from_fat'></td>
+            <td class='total_fat'></td> 
+            <td class='saturated_fat'></td>
+            <td class='total_carbohydrate'></td>
+            <td class='dietary_fiber'></td> 
+            <td class='sugars'></td>
+            <td class='protein'></td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td> 
+            <td></td>
+            <td></td>
+            <td></td> 
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <div id='main'>
+        <div id="menu-btns">
+          <!-- reset and hint buttons -->
+          <button id='calculate' class='btn btn-danger btn-sm'>Calculate</button>
+          <button id='sum' class='btn btn-sm'>Sum</button>
+          <button id='add-row'>Add row</button>
+          <!-- <button id='reset' class='btn btn-info btn-sm'>Reset</button> -->
+        </div>
+        <div id='result'>
+          <h3 id='total_result'>You have consumed a total of <span id='total_fat'></span>g of fat, <span id='total_protein'></span>g of protein and <span id='total_fiber'></span>g of dietary fiber today.</h3>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id='footer' class='center'>
+      <div class='row'>
+        <h4>Project by Cheryl Ng</h4>
+        <h5>Powered by Nutritionix</h5>
+      </div>
+    </div>
+    <script src='jquery.min.js'></script>
+    <script src='app(table).js'></script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+h3 {
+display: inline;
+}
+
+.individual-value {
+display: none;
+}
+#total_result {
+display: none;
+}
+
+#menu ul {
+display: block;
+}
+
+#menu li {
+display: inline;
+}
+
+table {
+border-collapse: collapse;
+}
+
+table, th, td {
+border: 1px solid black;
+text-align: center;
+}
+
+.quantity {
+width: 25px;
+text-align: center;
+}
+
+#add-row {
+  position: absolute;
+  right: 10px;
+}
+
+.choice {
+  cursor: grab;
+  user-select: none;
+}
+
+.selected {
+  background-color: rgb(255, 237, 133);
+  color: black;
+}
+
+.deselected {
+  background-color: white;
+  color: grey;
+}
+.dropdown {
+  position: absolute;
+  width: 94px;
+}
+.option {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  position: relative;
+  bottom: 0;
+  right: 0px;
+  width: 70px;
+  height: 13px;
+  margin-right: 16px;
+  padding-left:8px;
+}
+
+td < select {
+  position: relative;
+  width: 120px;
+}
+
